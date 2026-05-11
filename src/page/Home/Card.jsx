@@ -117,9 +117,11 @@ function Card() {
                       </h3>
 
 
-                      <button className='border px-4 py-2 rounded-2xl hover:bg-black hover:text-white transition-all duration-300'>
-                        Add to Cart
-                      </button>
+                      <a href={`https://wa.me/919462971381?text=Hello%20I%20want%20to%20order%20${card.title}`} target="_blank" rel="noopener noreferrer">
+                        <button className='border px-4 py-2 rounded-2xl hover:bg-black hover:text-white transition-all duration-300'>
+                          Add to Cart
+                        </button>
+                      </a>
 
                     </div>
                   </div>
