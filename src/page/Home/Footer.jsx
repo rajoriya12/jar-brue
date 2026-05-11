@@ -39,7 +39,7 @@ function Footer() {
 
 
                 <section className='p-20 flex justify-between'>
-                    <h2 className='font-bold text-2xl font-mono'>Grabbly</h2>
+                    <h2 className='font-bold text-2xl font-mono'>JarNBrew</h2>
                     <div>
                         <h4 className='font-medium text-zinc-500'><i>grab. open. enjoy.</i></h4>
                         <p className='text-zinc-300'>&copy;2025 Grabbly. Bangalore.</p>
