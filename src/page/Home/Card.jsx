@@ -89,10 +89,11 @@ function Card() {
                 <div className="relative w-[280px] sm:w-[320px] md:w-[360px] h-[500px] sm:h-[550px] md:h-[600px] duration-700 transform-style-preserve-3d
     group-hover:rotate-y-180 scale-100 md:scale-110">
 
-                  <div className=" absolute w-full h-full backface-hidden pointer-events-none rounded-2xl bg-white text-blackshadow-2xl overflow-hidden " >
+                  <div className=" absolute w-full h-full backface-hidden rounded-2xl bg-white text-blackshadow-2xl overflow-hidden " >
 
-                    <img
-                      className='w-2/3 m-auto mb-10'
+                    <img onClick={() => {
+                      navigate(`/ProductDitelas/${card.name}`)
+                    }} className='w-2/3 m-auto mb-10'
                       src={card.image}
                       alt=""
                     />
@@ -128,8 +129,7 @@ function Card() {
 
                     <img onClick={() => {
                       navigate(`/ProductDitelas/${card.name}`)
-                    }}
-                      className='bg-zinc-100 w-full'
+                    }} className='bg-zinc-100 w-full'
                       src={card.hover}
                       alt=""
                     />
@@ -146,7 +146,7 @@ function Card() {
                         <h3 className='font-extrabold text-2xl'>
                           ₹149
                         </h3>
-                        <a className="relative z-50" href={`https://wa.me/919462971381?text=Hi%20I%20want%20to%20order%20${card.title}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://wa.me/919462971381?text=Hello%20I%20want%20to%20order%20${card.title}`} target="_blank" rel="noopener noreferrer">
                           <button className='border px-4 py-2 rounded-2xl hover:bg-black hover:text-white transition-all duration-300'>
                             Add to Cart
                           </button>

@@ -31,7 +31,7 @@ function ProductDetails() {
 
                     <section>
                         <div className="border-b-2 border-zinc-200 ">
-                            <a className="relative z-50" href={`https://wa.me/919462971381?text=Hi%20I%20want%20to%20order%20${card.title}`} target="_blank" rel="noopener noreferrer">
+                            <a className="relative z-50" href={`https://wa.me/919462971381?text=Hi%20I%20want%20to%20order%20${cards.title}`} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-black text-mist-100 w-full py-4 rounded-4xl m-3 hover:bg-zinc-700 transition-all duration-400 ">Add to cart</button>
                             </a>
                         </div>
